@@ -25,6 +25,7 @@ int main()
     }
     horneada = hornearPizza(temperatura);
     horneada ? std::cout<<"Pizza horneada": std::cout<<"Temperatura insuficiente";
+    std::cout << "La pizza sera entregada a " << direccion;
     return 0;
 }
 
@@ -39,7 +40,7 @@ bool hornearPizza(double gradosCoccion){
 bool hornearPizza(double gradosCoccion, std::string direccion){
     if (gradosCoccion > 90)
     {
-        std::cout << "La pizza sera entregada a " << direccion; 
+         
         return true;
     }
     return false;
